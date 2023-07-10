@@ -1,0 +1,146 @@
+.about-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: inherit;
+}
+
+.about-header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-header .home-link {
+  font-family: var(--font-display);
+  font-size: 3rem;
+}
+
+.about-header .home-link a {
+  color: var(--color-foreground);
+}
+
+.about-header .home-link a:hover {
+  text-decoration: none;
+}
+
+.about-header .logo-medium {
+  display: none;
+}
+
+.about-header a:hover {
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1px;
+}
+
+.about-header .user-info {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.about-banner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  flex: 1 1 100%;
+  width: 100%;
+  color: var(--color-background);
+  background-color: var(--color-foreground);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.about-image {
+  justify-content: center;
+}
+
+.about-info {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-bottom: 1rem;
+}
+
+.about-info dl {
+  font-family: var(--font-display);
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 1rem;
+  line-height: 1.7;
+}
+
+.about-appearance {
+  display: grid;
+  grid-template-columns: 5fr 3fr;
+  padding-bottom: 1rem;
+}
+
+.about-appearance dl {
+  font-family: var(--font-display);
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  line-height: 1.7;
+}
+
+.about-classifications {
+  font-family: var(--font-display);
+  width: 100%;
+}
+
+.about-classifications table {
+  width: 100%;
+}
+
+.about-classifications th {
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+.about-experience {
+  font-family: var(--font-display);
+  display: grid;
+  grid-template-columns: 4fr 4fr 4fr;
+}
+
+.about-experience div {
+  padding-bottom: 2rem;
+}
+
+.about-outlet {
+  flex: 1;
+}
+
+.about-footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--color-border);
+}
+
+@media print, (min-width: 640px) {
+  .about-header .logo {
+    display: none;
+  }
+
+  .about-header .logo-medium {
+    display: block;
+  }
+
+  .about-main {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 639px) {
+  .about-main .container {
+    flex-direction: column;
+  }
+}
